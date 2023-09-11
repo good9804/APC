@@ -15,7 +15,3 @@ cd APCOrder
 sudo sh start.sh &
 
 cd ..
-cd APCKafka
-sudo sh start.sh &
-
-cd ..
