@@ -1,7 +1,16 @@
-@echo off
-cd /d %~dp0
 
-cp nginx.conf ..\etc\nginx\
+#! /bin/bash
+cd "$(dirname "$0")"
 
-nohup sudo service start nginx
-pause
+cp nginx.conf ../nginx/conf
+cd ../nginx
+
+config_file="$(pwd)/conf/nginx.conf"
+
+sudo service nginx stop
+sudo killall nginx
+sudo nginx -c "$config_file"
+
+
+echo "Press Enter to exit..."
+read input
