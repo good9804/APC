@@ -10,7 +10,11 @@ cp server3.properties ../kafka/config/
 
 # 백그라운드에서 Zookeeper와 Kafka 서버를 시작
 ../kafka/bin/zookeeper-server-start.sh ../kafka/config/zookeeper.properties 2>&1 &
-sleep 10
+while ! nc -z localhost 2181; do
+  sleep 1
+done
+echo "Zookeeper is up and running."
+
 
 ../kafka/bin/kafka-server-start.sh ../kafka/config/server1.properties 2>&1 &
 sleep 3
