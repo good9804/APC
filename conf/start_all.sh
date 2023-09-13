@@ -1,4 +1,4 @@
-
+cd ../
 cd APCAuth
 sudo sh start.sh &
  
