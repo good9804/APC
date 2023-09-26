@@ -15,4 +15,12 @@ cd APCOrder
 sudo sh start.sh > /dev/null 2>&1 &
 
 cd ..
+cd APCWebGL
+sudo sh start.sh > /dev/null 2>&1 &
+
+cd ..
+cd ColdStorageWebGL
+sudo sh start.sh > /dev/null 2>&1 &
+
+cd ..
 
