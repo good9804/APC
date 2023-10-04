@@ -19,7 +19,7 @@ cd APCWebGL
 sudo sh start.sh > /dev/null 2>&1 &
 
 cd ..
-cd ColdStorageWebGL
+cd ColdStorageWebGL 2
 sudo sh start.sh > /dev/null 2>&1 &
 
 cd ..
