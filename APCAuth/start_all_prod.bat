@@ -7,5 +7,7 @@ start /B "" cmd /c "cd  ..\APCKafka && call kafka.bat"
 start /B "" cmd /c "cd  ..\APCDashBoard && call start_product.bat"
 start /B "" cmd /c "cd  ..\APCProduct && call start_product.bat"
 start /B "" cmd /c "cd  ..\APCOrder && call start_product.bat"
+start /B "" cmd /c "cd  ..\APCWebGL && call start_product.bat"
+start /B "" cmd /c "cd  ..\ColdStorageWebGL 2 && call start_product.bat"
 
 pause
